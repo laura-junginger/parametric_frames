@@ -1,11 +1,13 @@
 {
-  "name": "threejs_vite_cc2023",
+  "name": "assignment_01",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -13,6 +15,7 @@
   },
   "dependencies": {
     "lil-gui": "^0.19.1",
-    "three": "^0.158.0"
+    "three": "^0.158.0",
+    "three-js-csg-es6": "^73.0.0"
   }
 }
